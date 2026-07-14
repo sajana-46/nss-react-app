@@ -5,14 +5,25 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Addvolunteer from './components/Addvolunteer'
 import Viewvolunteer from './components/Viewvolunteer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navigationbar from './components/Navigationbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Addvolunteer/>
-    <Viewvolunteer/>
+    <BrowserRouter>
+    <Routes>
+            
+
+
+      <Route path='/' element={<Addvolunteer/>} />
+      <Route path='/viewall' element={<Viewvolunteer/>} />
+
+    </Routes>
+    </BrowserRouter>
+   
       
     </>
   )
