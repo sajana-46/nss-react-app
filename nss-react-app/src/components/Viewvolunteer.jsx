@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import{useEffect} from 'react'
+import Navigationbar from './Navigationbar'
 
 
 
@@ -28,6 +29,7 @@ const Viewvolunteer = () => {
     
   return (
     <div>
+        <Navigationbar/>
         
         
         
